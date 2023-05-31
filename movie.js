@@ -1,5 +1,5 @@
 const section = document.querySelector(".cardlist");
-
+const imgUrl = "https://image.tmdb.org/t/p/w300";
 const options = {
   method: "GET",
   headers: {
@@ -24,10 +24,12 @@ fetch(
       const overview = document.createElement("p");
       const average = document.createElement("p");
 
+      img.setAttribute("src", imgUrl + moviecard.poster_path);
       title.innerHTML = `${moviecard.title}`;
       overview.innerHTML = `${moviecard.overview}`;
       average.innerHTML = `${moviecard.vote_average}`;
 
+      div.appendChild(img);
       div.appendChild(title);
       div.appendChild(overview);
       div.appendChild(average);
