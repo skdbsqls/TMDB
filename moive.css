@@ -42,7 +42,6 @@ button {
   padding: 30px;
   width: 300px;
   justify-self: center;
-  border: 1px solid black;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
   margin: 20px;
